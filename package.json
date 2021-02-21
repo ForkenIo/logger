@@ -1,0 +1,25 @@
+{
+  "name": "@forken/logger",
+  "version": "0.0.1",
+  "description": "Better console logger",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": "git@github.com:ForkenIo/logger.git",
+  "author": "Sebastian Szczepanski <sebastian@ably.pl>",
+  "license": "MIT",
+  "devDependencies": {
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.1.5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint",
+    "version": "git add -A src"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
